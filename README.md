@@ -6,7 +6,23 @@ File: [`AwakeningCinematic.client.lua`](AwakeningCinematic.client.lua)
 
 ---
 
-## Setup
+## Easiest install (no copy-paste)
+
+**Option 1: insert the model file**
+1. Download [`AwakeningCinematic.rbxmx`](AwakeningCinematic.rbxmx) (open it on GitHub, then click the download icon).
+2. In Studio's Explorer, right-click **StarterPlayer → StarterPlayerScripts** and choose **Insert from File...**
+3. Pick the downloaded `.rbxmx` file. A LocalScript called `AwakeningCinematic` appears, with the code already inside.
+
+**Option 2: one line in the Command Bar**
+1. In Studio, go to **View** and click **Command Bar**.
+2. Paste this line into it and press Enter:
+```lua
+local h=game:GetService("HttpService") h.HttpEnabled=true local s=Instance.new("LocalScript") s.Name="AwakeningCinematic" s.Source=h:GetAsync("https://raw.githubusercontent.com/SlapzX/roblox-code/claude/roblox-cinematic-script-38ln3v/AwakeningCinematic.client.lua") s.Parent=game.StarterPlayer.StarterPlayerScripts print("Awakening installed!")
+```
+
+Note that this turns on **Allow HTTP Requests** for the place. That setting is only needed for the install, and you can turn it off again in Game Settings → Security.
+
+## Manual setup
 
 1. **Open Roblox Studio** and open any place. A fresh *Baseplate* works.
 2. In the **Explorer**, expand **StarterPlayer** and select **StarterPlayerScripts**.
